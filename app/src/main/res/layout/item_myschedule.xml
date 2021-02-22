@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/myscedule_linear"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints">
+
+
+        <LinearLayout
+            android:layout_width="160dp"
+            android:layout_height="40dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="18dp"
+                android:layout_marginLeft="10dp"
+                android:text="Id Schedule:"
+                android:fontFamily="@font/notoseriflight"
+                android:textColor="@color/darkPrimary"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/vid_schedule"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="@font/notoserifbold"
+                android:textColor="@color/darkPrimary"
+                android:textSize="12sp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="140dp"
+            android:layout_height="40dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="30dp"
+                    android:layout_height="15dp"
+                    android:fontFamily="@font/notoseriflight"
+                    android:text="Crew: "
+                    android:layout_marginLeft="9dp"
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/darkPrimary"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/vnama_crew"
+                    android:layout_width="match_parent"
+                    android:layout_height="17dp"
+                    android:fontFamily="@font/notoserifbold"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/darkPrimary"
+                    android:textSize="13sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="40dp"
+                    android:layout_height="15dp"
+                    android:fontFamily="@font/notoserifthin"
+                    android:text="Tanggal: "
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/darkPrimary"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/vtanggal"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:fontFamily="@font/notoserifbold"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/darkPrimary"
+                    android:textSize="11sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

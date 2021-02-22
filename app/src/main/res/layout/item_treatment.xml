@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="125dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/item_treatment"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/xphoto_treatment"
+            android:layout_width="110dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="15dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/xnama_treatment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:fontFamily="@font/notoserifbold"
+                android:textColor="@color/darkPrimary"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/xketerangan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:fontFamily="@font/notoseriflight"
+                android:textColor="@color/darkPrimary"
+                android:textSize="12sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="120dp"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="20dp"
+                        android:layout_height="15dp"
+                        android:layout_marginTop="0dp"
+                        android:fontFamily="@font/notoserifthin"
+                        android:text="RP."
+                        android:textColor="@color/darkPrimary"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/xharga_treatment"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:textAlignment="textStart"
+                        android:fontFamily="@font/notoserifbold"
+                        android:textColor="@color/darkPrimary"
+                        android:textSize="30sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="K"
+                        android:layout_marginLeft="5dp"
+                        android:fontFamily="@font/notoserifregular"
+                        android:textColor="@color/darkPrimary"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="90dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/button_detail_item"
+                        android:layout_width="80dp"
+                        android:layout_height="25dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/btn_green_detail_product"
+                        android:fontFamily="@font/notoserifregular"
+                        android:textAllCaps="false"
+                        android:layout_gravity="end"
+                        android:text="@string/detail"
+                        android:textColor="@color/whitePrimary"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

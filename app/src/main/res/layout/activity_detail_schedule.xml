@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whitePrimary"
+    android:paddingRight="40dp"
+    tools:context=".DetailSchedule">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:scrollbars="none"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/bg_detail"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_layout_schedule_treatment"
+                android:orientation="vertical"
+                android:paddingBottom="15dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/btn_back"
+                        android:layout_width="45dp"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="45dp"
+                        android:layout_marginRight="10dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="35dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/ic_back_header" />
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/app_logo"
+                        android:layout_width="match_parent"
+                        android:layout_height="122dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="60dp"
+                        android:src="@drawable/logosplash"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.498"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </LinearLayout>
+
+
+                <ImageView
+                    android:id="@+id/zphoto_treatment"
+                    android:layout_width="155dp"
+                    android:layout_height="110dp"
+                    android:layout_marginStart="110dp"/>
+
+                <TextView
+                    android:id="@+id/znama_treatment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/notoserifbold"
+                    android:textAlignment="center"
+                    android:textColor="@color/darkPrimary"
+                    android:textSize="19sp" />
+
+                <TextView
+                    android:id="@+id/zketerangan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/notoseriflight"
+                    android:textAlignment="center"
+                    android:textColor="@color/darkPrimary"
+                    android:textSize="14sp" />
+
+                <View
+                    android:id="@+id/view1"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="25dp"
+                    android:background="#A2BBA8"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.483"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView1" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="0dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="120dp"
+                        android:layout_height="60dp"
+                        android:layout_marginLeft="35dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/notoserifbold"
+                            android:text="Waktu"
+                            android:textAlignment="center"
+                            android:textColor="@color/darkPrimary"
+                            android:textSize="19sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/zwaktu_treatment"
+                                android:layout_width="25dp"
+                                android:layout_height="17dp"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginTop="10dp"
+                                android:fontFamily="@font/notoserifthin"
+                                android:textAlignment="textEnd"
+                                android:textColor="@color/darkPrimary"
+                                android:textSize="15sp" />
+
+                            <TextView
+                                android:layout_width="50dp"
+                                android:layout_height="17dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="10dp"
+                                android:fontFamily="@font/notoserifthin"
+                                android:text="Menit"
+                                android:textColor="@color/darkPrimary"
+                                android:textSize="15sp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="35dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/notoserifbold"
+                            android:text="Harga"
+                            android:textAlignment="center"
+                            android:textColor="@color/darkPrimary"
+                            android:textSize="19sp" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="20dp"
+                                android:layout_height="15dp"
+                                android:layout_marginTop="5dp"
+                                android:fontFamily="@font/notoserifthin"
+                                android:text="RP."
+                                android:textColor="@color/darkPrimary"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:id="@+id/zdetail_harga"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:text="20"
+                                android:fontFamily="@font/notoserifbold"
+                                android:textColor="@color/darkPrimary"
+                                android:textSize="30sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginLeft="5dp"
+                                android:text="K"
+                                android:fontFamily="@font/notoserifregular"
+                                android:textColor="@color/darkPrimary"
+                                android:textSize="20sp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="50dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/notoserifbold"
+                        android:text="Catatan"
+                        android:textAlignment="center"
+                        android:textColor="@color/darkPrimary"
+                        android:textSize="19sp" />
+
+                    <TextView
+                        android:id="@+id/zcatatan"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:fontFamily="@font/notoseriflight"
+                        android:textColor="@color/darkPrimary"
+                        android:textSize="15sp" />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/bg_btn_hapus_schedule"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/button_hapus"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginRight="20dp"
+                        android:fontFamily="@font/notoserifregular"
+                        android:text="Hapus Treatment"
+                        android:textAlignment="textEnd"
+                        android:textAllCaps="false"
+                        android:textColor="@color/whitePrimary"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

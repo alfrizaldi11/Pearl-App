@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_crew"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp">
+
+    <com.github.florent37.shapeofview.shapes.CircleView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:id="@+id/photo_crew"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/icon_nopic" />
+
+    </com.github.florent37.shapeofview.shapes.CircleView>
+
+
+    <TextView
+        android:id="@+id/nama_crew"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@font/notoserifregular"
+        android:text="Crew Name"
+        android:textAlignment="center"
+        android:textColor="@color/darkPrimary"
+        android:textSize="15sp" />
+
+    <View
+        android:layout_width="190dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="center"
+        android:background="#A2BBA8" />
+
+</LinearLayout>

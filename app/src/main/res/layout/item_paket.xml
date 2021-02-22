@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="228dp"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginRight="10dp">
+
+    <LinearLayout
+        android:id="@+id/linearLayout13"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/paket"
+            android:layout_width="match_parent"
+            android:layout_height="120dp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/xnama_treatment"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="45dp"
+        android:fontFamily="@font/notoserifbold"
+        android:textAlignment="textEnd"
+        android:textColor="@color/whitePrimary"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/xketerangan"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_marginEnd="20dp"
+        android:fontFamily="@font/notoseriflight"
+        android:textAlignment="textEnd"
+        android:textColor="@color/whitePrimary"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/xnama_treatment" />
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="23dp"
+        android:orientation="horizontal"
+        android:background="@drawable/bg_btn_paket"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/button_back"
+            android:layout_marginTop="4dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="5dp"
+            android:layout_width="20dp"
+            android:layout_height="15dp"
+            android:src="@drawable/ic_left" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginTop="2dp"
+            android:fontFamily="@font/notoserifthin"
+            android:text="Lihat Paket"
+            android:textAlignment="textStart"
+            android:textColor="@color/whitePrimary"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

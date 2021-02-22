@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "679286064831",
+    "firebase_url": "https://pearl-78bab.firebaseio.com",
+    "project_id": "pearl-78bab",
+    "storage_bucket": "pearl-78bab.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:679286064831:android:f56a15ae50dfec90c0e80a",
+        "android_client_info": {
+          "package_name": "com.alfian.pearl"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "679286064831-986t2c4vidgp3u1eo4a4mn411p1dk2mk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBNKeoinPYyPUwDoteqm9u2ncCodXfVqWA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "679286064831-986t2c4vidgp3u1eo4a4mn411p1dk2mk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

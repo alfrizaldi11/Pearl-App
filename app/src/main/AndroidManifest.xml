@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.alfian.pearl">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:screenOrientation="portrait"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".DetailMySchedule"></activity>
+        <activity android:name=".Filter" />
+        <activity android:name=".DetailPaket" />
+        <activity android:name=".PilihJadwalAntrian" />
+        <activity android:name=".PilihCrewAntrian" />
+        <activity android:name=".PilihJadwal" />
+        <activity android:name=".PilihCrew" />
+        <activity android:name=".DetailSchedule" />
+        <activity android:name=".SearchTreatment" />
+        <activity android:name=".MenMenuHair" />
+        <activity android:name=".MenMenuTreatment" />
+        <activity android:name=".MenMenuCut" />
+        <activity android:name=".WomenMenuHair" />
+        <activity android:name=".WomenMenuTreatment" />
+        <activity android:name=".ScheduleFix" />
+        <activity android:name=".EditProfile" />
+        <activity android:name=".Profile" />
+        <activity android:name=".Antrian" />
+        <activity android:name=".Schedule" />
+        <activity android:name=".DetailTreatment" />
+        <activity android:name=".WomenMenuMakeup" />
+        <activity android:name=".MainMenu" />
+        <activity android:name=".SuccessRegister" />
+        <activity android:name=".RegisterTwo" />
+        <activity android:name=".RegisterOne" />
+        <activity android:name=".Login" />
+        <activity android:name=".Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

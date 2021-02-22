@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whitePrimary"
+    tools:context=".Filter">
+
+    <LinearLayout
+        android:id="@+id/headermain"
+        android:layout_width="match_parent"
+        android:layout_height="59dp"
+        android:background="@drawable/bg_header_first"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/logo_bar"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:src="@drawable/logoheader" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/back"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/button_back"
+            android:layout_width="35dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="18dp"
+            android:src="@drawable/ic_back_header" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayoutheader"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_marginTop="60dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/filter"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/termurah"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Termurah"
+                android:fontFamily="@font/notoserifregular"
+                android:textAllCaps="false"
+                android:textColor="@color/grayPrimary"
+                android:textSize="18sp"
+                android:background="@color/whitePrimary"/>
+
+            <View
+                android:layout_width="2dp"
+                android:layout_height="45dp"
+                android:background="@color/colorPrimary"/>
+
+            <Button
+                android:id="@+id/termahal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Termahal"
+                android:fontFamily="@font/notoserifregular"
+                android:textAllCaps="false"
+                android:textColor="@color/grayPrimary"
+                android:textSize="18sp"
+                android:background="@color/whitePrimary"/>
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/view5"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#EDEDED"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="5dp" />
+
+        <FrameLayout
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="130dp"
+        android:fontFamily="@font/notoserifregular"
+        android:text="Found your treatment"
+        android:visibility="visible"
+        android:layout_gravity="center"
+        android:textColor="@color/darkPrimary"
+        android:textSize="15sp"/>
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

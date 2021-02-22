@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_layout_green"
+    tools:context=".Antrian">
+
+
+    <ScrollView
+        android:id="@+id/scrollVieweditprofile"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:scrollbars="none"
+        app:layout_constraintBottom_toTopOf="@+id/menu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/bg_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="52dp"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0">
+
+                <LinearLayout
+                    android:id="@+id/back"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:orientation="horizontal"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <ImageView
+                        android:id="@+id/button_back"
+                        android:layout_width="35dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="25dp"
+                        android:layout_marginBottom="18dp"
+                        android:src="@drawable/ic_back_header" />
+
+                    <ImageView
+                        android:id="@+id/app_logo"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="60dp"
+                        android:src="@drawable/logosplash" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/notoserifbold"
+                    android:text="Antrian"
+                    android:textAlignment="center"
+                    android:textColor="@color/darkPrimary"
+                    android:textSize="22sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/app_logo" />
+
+                <View
+                    android:id="@+id/view1"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="#A2BBA8"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.483"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView1" />
+
+                <LinearLayout
+                    android:id="@+id/linearLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="24dp"
+                    android:background="@drawable/bg_layout_white"
+                    android:orientation="vertical"
+                    android:paddingLeft="25dp"
+                    android:paddingTop="5dp"
+                    android:paddingRight="25dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/linearLayout5">
+
+
+                    <LinearLayout
+                        android:id="@+id/linearLayout5"
+                        android:layout_width="310dp"
+                        android:layout_height="65dp"
+                        android:orientation="horizontal"
+                        android:paddingLeft="70dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <LinearLayout
+                            android:layout_width="170dp"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginEnd="95dp"
+                            android:background="@drawable/bg_layout_tanggal"
+                            android:orientation="horizontal"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.722"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/header_main">
+
+                            <EditText
+                                android:id="@+id/qtanggal"
+                                android:layout_width="140dp"
+                                android:layout_height="30dp"
+                                android:layout_marginLeft="3dp"
+                                android:layout_marginTop="5dp"
+                                android:background="@drawable/bg_layout_white"
+                                android:fontFamily="@font/notoserifregular"
+                                android:textAlignment="center"
+                                android:textColor="@color/darkPrimary"
+                                android:textColorHint="@color/grayPrimary"
+                                android:textSize="15sp" />
+
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="25dp"
+                                android:layout_marginTop="8dp"
+                                android:layout_marginRight="5dp"
+                                android:src="@drawable/calendar" />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/view2"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="3dp"
+                        android:background="#A2BBA8"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.483"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView1" />
+
+
+                            <LinearLayout
+                                android:id="@+id/linearLayoutantrian"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:paddingTop="10dp"
+                                android:paddingBottom="10dp">
+
+                                <com.github.florent37.shapeofview.shapes.CircleView
+                                    android:layout_width="60dp"
+                                    android:layout_height="60dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_gravity="center">
+
+                                    <ImageView
+                                        android:id="@+id/qphoto_crew"
+                                        android:layout_width="60dp"
+                                        android:layout_height="60dp"
+                                        android:src="@drawable/icon_nopic" />
+
+                                </com.github.florent37.shapeofview.shapes.CircleView>
+
+                                <TextView
+                                    android:id="@+id/qnama_crew"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/notoserifthin"
+                                    android:text="Crew Name"
+                                    android:paddingBottom="10dp"
+                                    android:textAlignment="center"
+                                    android:layout_gravity="center"
+                                    android:textColor="@color/darkPrimary"
+                                    android:textSize="20sp" />
+
+                                <androidx.recyclerview.widget.RecyclerView
+                                    android:id="@+id/antrian_place"
+                                    android:layout_width="280dp"
+                                    android:layout_height="280dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="3dp"
+                                    android:background="@drawable/bg_layout_whitegreen">
+
+
+                                </androidx.recyclerview.widget.RecyclerView>
+
+
+                            </LinearLayout>
+
+
+
+                    <View
+                        android:id="@+id/view3"
+                        android:layout_width="310dp"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="30dp"
+                        android:background="#A2BBA8"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.483"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/scrollView2" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_no_antrian"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_marginTop="250dp"
+                android:fontFamily="@font/notoserifregular"
+                android:text="Antrian Kosong"
+                android:textColor="@color/darkPrimary"
+                android:textSize="17sp"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
